@@ -26,8 +26,6 @@ html {
 }
 .nav-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   gap: 16px;
 }
@@ -56,4 +54,30 @@ html {
 }
 .nav-item-text:hover {
   color: #fff;
+}
+.header-nav {
+  width: 453px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+  background: var(--background-default, #0a0b0a);
+}
+.header-menu-toggle {
+  width: 41px;
+  height: 41px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  border: 1px solid rgba(239, 231, 210, 0.15);
+  background: rgba(24, 24, 24, 0.5);
+}
+.header-menu-line {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: #f1ad00;
 }
