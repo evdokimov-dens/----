@@ -57,13 +57,17 @@ html {
   color: #fff;
 }
 .header-nav {
+  position: absolute;
   width: 453px;
+  height: 57px;
   display: flex;
   align-items: center;
   gap: 12px;
   border-radius: 12px;
   background: var(--background-default, #0a0b0a);
   padding: 8px;
+  margin-top: 72px;
+  margin-left: 72px;
 }
 .header-menu-toggle {
   width: 41px;
@@ -87,18 +91,23 @@ html {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 28px;
+  gap: 15px;
   margin-left: 0;
   padding-left: 0;
+}
+.header-menu-list li:last-child {
+  border-radius: 8px;
+  border: 1px solid var(--border-default, rgba(239, 231, 210, 0.15));
+  background: var(--background-muted, rgba(24, 24, 24, 0.5));
+  padding: 12px;
 }
 .header-logo {
   margin-right: 10px;
 }
 .header-menu-link {
+  list-style: none;
   text-decoration: none;
-}
-.header-menu-item {
-  color: #efe7d2;
+  color: var(--text-default, #efe7d2);
   font-family: "Satoshi";
   font-size: 12px;
   font-style: normal;
